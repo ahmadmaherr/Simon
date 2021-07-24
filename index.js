@@ -46,7 +46,7 @@ $(".btn").click(function(){
 
   var audio = new Audio("sounds/" + userClick + ".mp3");
   audio.play();
-checkAnswer(userChosenColor.length(-1)
+checkAnswer(userChosenColor.length-1)
 });
 
 function checkAnswer(level){
