@@ -1,8 +1,8 @@
 var colors = ["red", "green", "blue", "yellow"];
 var gamePattern = [];
 var userChosenColor = [];
-level = 0;
-started = false;
+var level = 0;
+var started = false;
 
 var width = $(window).width();
     if (width <= 480) {
@@ -46,7 +46,7 @@ $(".btn").click(function(){
 
   var audio = new Audio("sounds/" + userClick + ".mp3");
   audio.play();
-checkAnswer(userChosenColor.lenght-1)
+checkAnswer(userChosenColor.length(-1)
 });
 
 function checkAnswer(level){
