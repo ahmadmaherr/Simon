@@ -9,7 +9,7 @@ var width = $(window).width();
       $("body").click(function(){
           if (!started){
             $("h1").text("level "+ level);
-            tartSquence();
+            startSquence();
             started = true;
             }
 
