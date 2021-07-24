@@ -6,13 +6,24 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function() {
-  if (!started) {
-  $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-  }
-});
+var width = $(window).width();
+    if (width <= 480) {
+      $("h1").click(function() {
+        if (!started) {
+        $("#level-title").text("Level " + level);
+          nextSequence();
+          started = true;
+        }
+      });
+    } else {
+      $(document).keypress(function() {
+        if (!started) {
+        $("#level-title").text("Level " + level);
+          nextSequence();
+          started = true;
+        }
+      });
+    }
 
 $(document).keypress(function() {
   if (!started) {
