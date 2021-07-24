@@ -7,8 +7,8 @@ var started = false;
 var level = 0;
 
 var width = $(window).width();
-    if (width <= 480) {
-      $("h1").click(function() {
+    if (width <= 800) {
+      $("body").click(function() {
         if (!started) {
         $("#level-title").text("Level " + level);
           nextSequence();
